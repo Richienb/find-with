@@ -1,6 +1,6 @@
 {
 	"name": "find-with",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Find the item in an array with the highest computed value.",
 	"repository": "https://github.com/Richienb/find-with.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
