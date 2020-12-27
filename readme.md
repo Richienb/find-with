@@ -1,41 +1,57 @@
-# the-module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# find-with [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/find-with/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/find-with)
 
-My awesome module.
+Find the item in an array with the highest computed value.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/find-with.png)](https://npmjs.com/package/find-with)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install find-with
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module")
+const findWith = require("find-with")
 
-theModule("unicorns")
-//=> "unicorns & rainbows"
+findWith(["a", "abc", "ab"], item => item.length)
+//=> "abc"
+
+findWith.multiple(["a", "abc", "abc", "ab"], item => item.length)
+//=> ["abc", "abc"]
 ```
 
 ## API
 
-### theModule(input, options?)
+### findWith(array, predicate)
 
-#### input
+Find the item in an array with the highest computed value.
 
-Type: `string`
+### findWith.multiple(array, predicate)
 
-Lorem ipsum.
+Find the items in an array with the highest computed values.
 
-#### options
+#### array
 
-Type: `object`
+Type: `array`
 
-##### postfix
+The array to find the items from.
 
-Type: `string`\
-Default: `rainbows`
+#### predicate
 
-Lorem ipsum.
+Type: `(item, index, array) => number`
+
+A predicate that is provided with each item in the array.
+
+##### item
+
+The item in the array.
+
+##### index
+
+The index of the item in the array.
+
+##### array
+
+The array.

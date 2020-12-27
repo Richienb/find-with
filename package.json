@@ -1,8 +1,8 @@
 {
-	"name": "the-module",
+	"name": "find-with",
 	"version": "0.0.0",
-	"description": "My awesome module.",
-	"repository": "https://github.com/Richienb/the-module.git",
+	"description": "Find the item in an array with the highest computed value.",
+	"repository": "https://github.com/Richienb/find-with.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
 	"license": "MIT",
 	"main": "index.js",
@@ -17,7 +17,17 @@
 		"lint": "xo",
 		"test": "xo && ava"
 	},
-	"keywords": [],
+	"keywords": [
+		"find",
+		"with",
+		"array",
+		"filter",
+		"index",
+		"item",
+		"value",
+		"score",
+		"computed"
+	],
 	"dependencies": {},
 	"devDependencies": {
 		"ava": "^3.13.0",
